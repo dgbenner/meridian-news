@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "Meridian News Network | Breaking news, live coverage",
+    "storyFallback": "This is a developing story. Meridian will update it as information becomes available. Residents are advised to remain indoors and keep windows closed."
+  },
+
+  "altHeadlines": [
+    "SKIES TURN RED",
+    "NOT BIRDS",
+    "DO NOT LOOK UP",
+    "THE SECOND NIGHT",
+    "IT'S SPREADING",
+    "NO SIGNAL",
+    "WHAT ARE THEY?",
+    "NIGHT FALLS EARLY"
+  ],
+
+  "stories": {
+    "lead": {
+      "kicker": "Live coverage",
+      "headline": "They are overhead: what we know about the figures crossing the sky",
+      "byline": "By Meridian staff",
+      "updated": "Updated 7:41 PM EDT",
+      "media": { "id": "story-lead", "src": "", "alt": "Red-orange sky over a city skyline with dark shapes high above", "caption": "The sky over lower Manhattan shortly after 6 p.m. Eastern.", "credit": "Meridian / Pool" },
+      "paragraphs": [
+        "It started as a color. Shortly after 6 p.m. Eastern, the sky over New York began to darken toward red, and within the hour the same thing was being reported from Lagos, Warsaw, and Buenos Aires. Then came the shapes: dozens, then hundreds, of dark figures crossing the sky at an altitude no bird reaches, moving slowly, deliberately, and in no direction anyone could predict.",
+        "Officials have offered little beyond instructions to stay indoors. Pilots who were airborne when the sightings began have been grounded and are not speaking to reporters. Witnesses who saw the figures closest describe them in fragments: tall, ragged, carried on something long and narrow, and wrong in a way they struggle to put into words. Many say the worst part is the sound, a muffled, layered howl that doesn't stop when you close the windows."
+      ]
+    }
+  },
+
+  "sections": [
+    {
+      "type": "nav",
+      "logo": "MERIDIAN",
+      "logoImage": "media/logo.png",
+      "links": [
+        { "text": "World", "href": "#" },
+        { "text": "Americas", "href": "#" },
+        { "text": "Politics", "href": "#" },
+        { "text": "Business", "href": "#" },
+        { "text": "Health", "href": "#" },
+        { "text": "Science", "href": "#" },
+        { "text": "Sky", "href": "#" },
+        { "text": "Travel", "href": "#" },
+        { "text": "Faith", "href": "#" },
+        { "text": "Weather", "href": "#" },
+        { "text": "More", "href": "#", "dropdown": true }
+      ],
+      "watch": "Watch",
+      "listen": "Listen",
+      "signIn": "Sign in"
+    },
+
+    {
+      "type": "breaking",
+      "enabled": true,
+      "label": "Breaking",
+      "headline": "FROM THE PENTAGON: Governments confirm 'airborne contacts' above cities on four continents",
+      "href": "#story/lead",
+      "updated": "Updated 4 min ago"
+    },
+
+    {
+      "type": "ticker",
+      "enabled": true,
+      "secondsPerItem": 9,
+      "items": [
+        "FAA grounds all civilian flights",
+        "Red sky now visible on six continents",
+        "Residents urged to keep windows closed",
+        "Broadcast towers detect unidentified transmission",
+        "Trading suspended on major exchanges",
+        "Missing persons reports triple overnight"
+      ]
+    },
+
+    {
+      "type": "trending",
+      "max": 6,
+      "items": [
+        { "text": "Live Updates", "href": "#story/lead" },
+        { "text": "Red Sky", "href": "#" },
+        { "text": "Flight Ban", "href": "#" },
+        { "text": "The Sound", "href": "#" },
+        { "text": "Sightings Map", "href": "#" },
+        { "text": "Missing Persons", "href": "#" },
+        { "text": "Stay Indoors", "href": "#" },
+        { "text": "Markets Halted", "href": "#" },
+        { "text": "Eyewitness Video", "href": "#" },
+        { "text": "What We Know", "href": "#" }
+      ]
+    },
+
+    {
+      "type": "hero",
+      "columns": [
+        {
+          "items": [
+            { "kind": "card", "tag": "Analysis", "size": "lg", "headline": "Atmospheric scientists can't explain color shift spreading west from the Carpathians", "media": { "id": "hero-left-lead", "src": "media/hero-left-lead.jpg", "alt": "Mountain ridge under a reddening sky", "credit": "AS Photography / Commons / CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:Picturesque_sunset_in_the_Carpathian_Mountains_(54785849706).jpg" } },
+            { "kind": "thumb", "headline": "Sunset arrives 40 minutes ahead of schedule in Northern Hemisphere", "duration": "2:10", "media": { "id": "hero-left-thumb-1", "src": "media/hero-left-thumb-1.jpg", "alt": "Sun low over a harbor, far too early", "credit": "bertknot / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Sunset_in_Scarborough_-_2014_3.jpg" } },
+            { "kind": "thumb", "headline": "Why your phone camera can't focus on them, explained", "duration": "3:02", "media": { "id": "hero-left-thumb-2", "src": "media/hero-left-thumb-2.jpg", "alt": "Blurred phone photo of a dark shape against red sky", "credit": "Dietmar Rabich / Commons / CC BY-SA 4.0", "source": "https://commons.wikimedia.org/wiki/File:Norderney,_Promenade_--_2025_--_9281.jpg" } },
+            { "kind": "card", "size": "md", "headline": "Ornithologists confirm objects over Chicago match no known species", "media": { "id": "hero-left-feature", "src": "media/hero-left-feature.jpg", "alt": "Chicago skyline with tall dark silhouettes above it", "credit": "Chris Rycroft / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Chicago_skyline_from_the_Adler_Planetarium_Skyline_Walk_(52033271980).jpg" } },
+            { "kind": "thumb", "headline": "Shapes over Cairo: satellite imagery shows 9-hour gap", "media": { "id": "hero-left-thumb-3", "src": "media/hero-left-thumb-3.jpg", "alt": "Black satellite frame over the Nile delta", "credit": "NASA Goddard Space Flight Center / Commons / Public domain", "source": "https://commons.wikimedia.org/wiki/File:Cairo_and_Alexandria,_Egypt_at_Night_(NASA,_International_Space_Station_Science,_10_28_10)_(12868402644).jpg" } }
+          ]
+        },
+        {
+          "items": [
+            {
+              "kind": "lead",
+              "headline": "NIGHT TWO: STILL OVERHEAD",
+              "href": "#story/lead",
+              "media": { "id": "hero-main", "src": "media/hero-main.jpg", "alt": "Hundreds of dark figures crossing a red-orange sky above a city", "credit": "Christopher Michel / Commons / CC BY 2.0" },
+              "deck": "Dozens, then hundreds, of dark figures cross skies worldwide as the horizon turns red and officials urge residents to stay indoors",
+              "related": [
+                { "headline": "Pilots who saw them up close have stopped talking", "duration": "1:54" },
+                { "headline": "In pictures: the first night", "gallery": true }
+              ]
+            },
+            { "kind": "label", "text": "Emergency Response" },
+            {
+              "kind": "row",
+              "items": [
+                { "tag": "Analysis", "headline": "FAA grounds all civilian air traffic as radar returns show nothing", "media": { "id": "hero-er-1", "src": "media/hero-er-1.jpg", "alt": "Empty departures board, every flight cancelled", "credit": "MattiPaavola / Commons / CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Helsinki-Vantaa_departures_board_2010-04-18.jpg" } },
+                { "headline": "Military confirms it is \"tracking multiple contacts\"", "media": { "id": "hero-er-2", "src": "media/hero-er-2.jpg", "alt": "Radar operators in a dim control room", "credit": "Lance Cpl. Donald Dugger / Commons / Public domain", "source": "https://commons.wikimedia.org/wiki/File:Air_Traffic_Control_Plays_a_Key_Role_at_MCAS_Iwakuni_(9602424).jpg" } },
+                { "tag": "Live Updates", "tagStyle": "live", "headline": "Emergency alert issued in 12 states. Officials won't explain the wording", "media": { "id": "hero-er-3", "src": "media/hero-er-3.jpg", "alt": "Phone screen showing an emergency alert", "credit": "Tony Webster / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Flash_Flood_Warning_-_Cell_Phone_Wireless_Emergency_Alert_(47556855001).jpg" } }
+              ]
+            }
+          ]
+        },
+        {
+          "items": [
+            { "kind": "promo", "kicker": "Live all night", "title": "MERIDIAN TONIGHT", "headline": "Catch up on what we know, hour by hour", "media": { "id": "hero-right-promo", "src": "media/hero-right-promo.jpg", "alt": "Anchor desk lit red", "credit": "Vanessa Pike-Russell / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Incense_smoke_against_a_black_sky_-_Flickr_-_Vanessa_Pike-Russell.jpg" } },
+            { "kind": "card", "size": "md", "headline": "Residents in 30 countries report a low howling sound audible indoors", "duration": "0:47", "media": { "id": "hero-right-feature", "src": "media/hero-right-feature.jpg", "alt": "Closed apartment window at night, curtains drawn", "credit": "Matthew Henry / Commons / CC0", "source": "https://commons.wikimedia.org/wiki/File:Window_Front_at_Night_374889.jpg" } },
+            { "kind": "thumb", "headline": "Children in multiple countries drawing the same figure, teachers say", "media": { "id": "hero-right-thumb-1", "src": "media/hero-right-thumb-1.jpg", "alt": "Crayon drawing of a tall pointed figure", "credit": "My daughter Teresa / Commons / CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Child_drawing_age_3_crayon_on_paper.jpg" } },
+            { "kind": "thumb", "headline": "Churches, mosques and synagogues report record overnight attendance", "media": { "id": "hero-right-thumb-2", "src": "media/hero-right-thumb-2.jpg", "alt": "Candles lit in a crowded sanctuary", "credit": "Vince Reinhart / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Washington_National_Cathedral_(photo_2).jpg" } },
+            { "kind": "thumb", "headline": "Eyewitnesses describe figures \"riding something long and thin\"", "media": { "id": "hero-right-thumb-3", "src": "media/hero-right-thumb-3.jpg", "alt": "Silhouette on a long shaft against a red sky", "credit": "Roy Luck / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Looking_up_at_the_sky,_Chicago_IL_(9432858074).jpg" } }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "band",
+      "columns": [
+        {
+          "label": "More Top Stories",
+          "items": [
+            { "kind": "card", "tag": "Meridian Exclusive", "tagStyle": "exclusive", "headline": "Hospitals report surge of patients describing the same dream", "media": { "id": "band-top-lead", "src": "media/band-top-lead.jpg", "alt": "Hospital corridor under emergency lighting", "credit": "antefixus21 / Commons / CC0", "source": "https://commons.wikimedia.org/wiki/File:Royal_Victoria_Hospital,_Barrie,_Ontario,_Canada_(55046296281).jpg" } },
+            { "kind": "text", "headline": "Governments urge citizens to stay indoors and keep windows closed" },
+            { "kind": "text", "headline": "Archaeologists called to emergency government meeting" },
+            { "kind": "text", "headline": "Linguists asked to analyze audio. Results classified", "duration": "1:12" },
+            { "kind": "text", "headline": "Insurers invoke 'act of God' clauses worldwide" },
+            { "kind": "text", "headline": "Social platforms remove thousands of close-range videos" },
+            { "kind": "text", "headline": "Animals at zoos worldwide refusing to leave shelters", "duration": "0:48" }
+          ]
+        },
+        {
+          "label": "Sightings",
+          "items": [
+            { "kind": "overlay", "size": "xl", "headline": "Live map: where the sightings are spreading", "media": { "id": "band-sightings-feature", "src": "media/band-sightings-feature.jpg", "alt": "World map with red markers spreading west", "credit": "NASA's Scientific Visualization Studio - USRA/Kel Elkins, University of Maryland / Commons / Public domain" } },
+            {
+              "kind": "row",
+              "items": [
+                { "headline": "Sky discoloration now visible on six continents", "media": { "id": "band-sightings-1", "src": "media/band-sightings-1.jpg", "alt": "Red horizon over open water", "credit": "Vyacheslav Argenberg / Commons / CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:Malapascua_Island,_Ethereal_sunset_over_Visayan_Sea,_Philippines.jpg" } },
+                { "headline": "Fires in Rome, Mexico City and Seoul began within the same minute", "media": { "id": "band-sightings-2", "src": "media/band-sightings-2.jpg", "alt": "Smoke rising over a city at dusk", "credit": "CAL FIRE Mendocino / Commons / Public domain", "source": "https://commons.wikimedia.org/wiki/File:Smoke_from_the_August_Complex_Fires_as_seen_from_Willits.jpg" } }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "More From Europe",
+          "items": [
+            { "kind": "card", "headline": "Missing persons reports triple overnight across Europe", "media": { "id": "band-europe-lead", "src": "media/band-europe-lead.jpg", "alt": "Missing-person flyers on a lamppost", "credit": "Coastal Elite / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Missing_Person_2014_(23880412235).jpg" } },
+            { "kind": "text", "headline": "Rooftop livestream from Lisbon cut after 41 seconds" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "wide",
+      "columns": [
+        {
+          "label": "The Night",
+          "items": [
+            { "kind": "overlay", "rule": true, "size": "xl", "headline": "Night fell at 4:52 p.m. in London. Nobody has seen the moon since", "media": { "id": "wide-night-feature", "src": "media/wide-night-feature.jpg", "alt": "Thames embankment under a deep red sky", "credit": "Roy Katzenberg / Commons / CC BY 2.0" } }
+          ]
+        },
+        {
+          "label": "Science",
+          "items": [
+            { "kind": "card", "headline": "Broadcast towers in four countries pick up unidentified transmission", "media": { "id": "wide-science-1", "src": "media/wide-science-1.jpg", "alt": "Broadcast tower against a red sky", "credit": "Timo Newton-Syms / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Ruka_TV-mast.jpg" } },
+            { "kind": "card", "headline": "Radio hobbyists say the signal repeats every 13 minutes", "media": { "id": "wide-science-2", "src": "media/wide-science-2.jpg", "alt": "Shortwave receiver dial glowing in the dark", "credit": "ArnoldReinhold / Commons / CC BY 4.0", "source": "https://commons.wikimedia.org/wiki/File:ARRL_CW_SS_2023_receiver_display.jpg" } }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "footer",
+      "searchPlaceholder": "Search Meridian...",
+      "directory": [
+        [
+          { "heading": "World", "links": ["Africa", "Americas", "Asia", "Australia", "Europe", "Middle East", "Antarctica"] },
+          { "heading": "Politics", "links": ["Emergency Powers", "Congress", "Parliaments", "Briefings", "Fact Check"] },
+          { "heading": "Business", "links": ["Shipping", "Insurance", "Energy", "Media", "Aviation"] },
+          { "heading": "Markets", "links": ["Pre-markets", "Suspended Trading", "Commodities", "Currencies", "Fear Index"] },
+          { "heading": "Health", "links": ["Sleep", "Dreams", "Mental Health", "Hospitals", "Missing Persons"] },
+          { "heading": "Sky", "links": ["Sightings Map", "Red Sky Tracker", "Radar", "Atmosphere", "Sunset Times"] },
+          { "heading": "Science", "links": ["Space", "Acoustics", "Biology", "Linguistics", "Archaeology"] }
+        ],
+        [
+          { "heading": "Faith", "links": ["Churches", "Mosques", "Synagogues", "Temples", "Vigils"] },
+          { "heading": "Travel", "links": ["Flight Status", "Borders", "Road Closures", "Ferries", "Shelters"] },
+          { "heading": "Weather", "links": ["Forecast", "Alerts", "Storm Watch", "Radar", "Visibility"] },
+          { "heading": "Folklore", "links": ["Archive", "Almanacs", "Paintings", "Village Records", "Oral Histories"] },
+          { "heading": "Culture", "links": ["Art", "Books", "Music", "Film", "Theater"] },
+          { "heading": "Video", "links": ["Eyewitness", "Live TV", "Shorts", "Documentaries", "Archive Footage"] },
+          { "heading": "Listen", "links": ["The Sound", "Transmissions", "Overnight Radio", "Podcasts", "Briefings"] }
+        ],
+        [
+          { "heading": "Features", "links": ["Long Reads", "In Pictures", "The Night", "Explainers", "Timeline"] },
+          { "heading": "Watch", "links": ["Live TV", "Schedule", "Meridian Tonight", "Replays", "Clips"] },
+          { "heading": "Live", "links": ["Live Updates", "Ticker", "What We Know", "Maps", "Alerts"] },
+          { "heading": "Games", "links": ["Daily Crossword", "Word Ladder", "Sudoku", "Quiz", "Puzzles"] },
+          { "heading": "Stay Safe", "links": ["Stay Indoors", "Keep Windows Closed", "Report a Sighting", "Emergency Numbers", "Shelter Finder"] },
+          { "heading": "About Meridian", "links": ["Profiles", "Leadership", "Newsletters", "Careers", "Contact"] }
+        ]
+      ],
+      "bottomLinks": ["Watch", "Listen", "Live TV", "Sign in"],
+      "followLabel": "Follow Meridian",
+      "socialCount": 5,
+      "legal": ["Terms of Use", "Privacy Policy", "Cookie Settings", "Ad Choices", "Accessibility", "About Us", "Newsletters", "Transcripts"],
+      "copyright": "© 2026 Meridian News Network. A work of fiction."
+    }
+  ]
+}
