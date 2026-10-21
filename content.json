@@ -173,7 +173,11 @@
           "label": "More From Europe",
           "items": [
             { "kind": "card", "headline": "Missing persons reports triple overnight across Europe", "media": { "id": "band-europe-lead", "src": "media/band-europe-lead.jpg", "alt": "Missing-person flyers on a lamppost", "credit": "Coastal Elite / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Missing_Person_2014_(23880412235).jpg" } },
-            { "kind": "text", "headline": "Rooftop livestream from Lisbon cut after 41 seconds" }
+            { "kind": "text", "headline": "Rooftop livestream from Lisbon cut after 41 seconds" },
+            { "kind": "text", "headline": "Black cats missing for years returned home overnight. Owners say they haven’t aged" },
+            { "kind": "text", "headline": "Meteorologists say the blood on a recovered balloon “isn’t from anything at that altitude”" },
+            { "kind": "text", "headline": "Second weather balloon recovered in the same condition" },
+            { "kind": "text", "headline": "Senior centers on four continents report residents speaking to each other in a language with no known origin", "duration": "1:48" }
           ]
         }
       ]
