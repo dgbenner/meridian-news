@@ -74,8 +74,8 @@
   }
 
   function chip(card) {
-    if (card.duration) return ` <span class="chip">${ICON.play}${esc(card.duration)}</span>`;
-    if (card.gallery) return ` <span class="chip">${ICON.gallery}Gallery</span>`;
+    if (card.duration) return `&nbsp;<span class="chip"><span class="chip-ico">\u25B6\uFE0E</span>${esc(card.duration)}</span>`;
+    if (card.gallery) return `&nbsp;<span class="chip"><span class="chip-ico">\u25A3\uFE0E</span>Gallery</span>`;
     return '';
   }
 

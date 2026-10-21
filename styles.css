@@ -276,18 +276,23 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hl-xl { font-size: 26px; letter-spacing: -0.005em; }
 .hl-xxl { font-size: 32px; letter-spacing: -0.01em; }
 
+/* Video duration / gallery pill after a headline: red, white text,
+   centered on the headline's line of text. Inline (not inline-flex) so the
+   &nbsp; before it keeps it on the same line as the headline's last word. */
 .chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  margin-left: 2px;
-  font-size: 11px;
+  display: inline;
+  margin-left: 1px;
+  padding: 2px 7px 2px 6px;
+  border-radius: 999px;
+  background: var(--breaking);
+  color: #fff;
+  font-size: 10.5px;
   font-weight: 700;
-  color: var(--text-2);
+  line-height: 1;
   white-space: nowrap;
-  vertical-align: 1px;
+  vertical-align: 0.12em;
 }
-.chip svg { width: 11px; height: 11px; }
+.chip-ico { font-size: 0.78em; margin-right: 3px; position: relative; top: -0.06em; }
 
 .tag { display: block; font-size: 11px; font-weight: 700; color: var(--text-2); line-height: 1.2; }
 .tag-live { color: var(--breaking); }
