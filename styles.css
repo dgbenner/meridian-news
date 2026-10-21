@@ -1,4 +1,4 @@
-/* Meridian News Network. Palette and metrics live on :root. */
+/* Digital News Network. Palette and metrics live on :root. */
 :root {
   --accent: #b3120f;
   --breaking: #c4100c;
@@ -94,15 +94,33 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border-radius: 999px;
   line-height: 1.2;
 }
+/* Breaking light: a steady dot that gently dims, plus a soft ring that
+   grows and fades. Only transform/opacity animate, so it stays smooth. */
 .pulse {
-  width: 7px; height: 7px; border-radius: 50%;
+  position: relative;
+  flex: none;
+  width: 8px; height: 8px; border-radius: 50%;
   background: var(--breaking);
-  animation: pulse 1.4s ease-out infinite;
+  box-shadow: 0 0 3px rgba(196, 16, 12, 0.6);
+  animation: pulse-dot 1.8s ease-in-out infinite;
 }
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(196, 16, 12, 0.65); }
-  70% { box-shadow: 0 0 0 7px rgba(196, 16, 12, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(196, 16, 12, 0); }
+.pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--breaking);
+  filter: blur(0.6px);
+  will-change: transform, opacity;
+  animation: pulse-ring 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.55; }
+  80%, 100% { transform: scale(2.8); opacity: 0; }
 }
 .breaking-hl {
   flex: 1;

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Meridian News Network | Breaking news, live coverage",
-    "storyFallback": "This is a developing story. Meridian will update it as information becomes available. Residents are advised to remain indoors and keep windows closed."
+    "title": "Digital News Network | Breaking news, live coverage",
+    "storyFallback": "This is a developing story. Digital will update it as information becomes available. Residents are advised to remain indoors and keep windows closed."
   },
 
   "altHeadlines": [
@@ -19,9 +19,9 @@
     "lead": {
       "kicker": "Live coverage",
       "headline": "They are overhead: what we know about the figures crossing the sky",
-      "byline": "By Meridian staff",
+      "byline": "By Digital staff",
       "updated": "Updated 7:41 PM EDT",
-      "media": { "id": "story-lead", "src": "", "alt": "Red-orange sky over a city skyline with dark shapes high above", "caption": "The sky over lower Manhattan shortly after 6 p.m. Eastern.", "credit": "Meridian / Pool" },
+      "media": { "id": "story-lead", "src": "", "alt": "Red-orange sky over a city skyline with dark shapes high above", "caption": "The sky over lower Manhattan shortly after 6 p.m. Eastern.", "credit": "Digital / Pool" },
       "paragraphs": [
         "It started as a color. Shortly after 6 p.m. Eastern, the sky over New York began to darken toward red, and within the hour the same thing was being reported from Lagos, Warsaw, and Buenos Aires. Then came the shapes: dozens, then hundreds, of dark figures crossing the sky at an altitude no bird reaches, moving slowly, deliberately, and in no direction anyone could predict.",
         "Officials have offered little beyond instructions to stay indoors. Pilots who were airborne when the sightings began have been grounded and are not speaking to reporters. Witnesses who saw the figures closest describe them in fragments: tall, ragged, carried on something long and narrow, and wrong in a way they struggle to put into words. Many say the worst part is the sound, a muffled, layered howl that doesn't stop when you close the windows."
@@ -32,7 +32,7 @@
   "sections": [
     {
       "type": "nav",
-      "logo": "MERIDIAN",
+      "logo": "DIGITAL",
       "logoImage": "media/logo.png",
       "links": [
         { "text": "World", "href": "#" },
@@ -130,7 +130,7 @@
         },
         {
           "items": [
-            { "kind": "promo", "kicker": "Live all night", "title": "MERIDIAN TONIGHT", "headline": "Catch up on what we know, hour by hour", "media": { "id": "hero-right-promo", "src": "media/hero-right-promo.jpg", "alt": "Anchor desk lit red", "credit": "Vanessa Pike-Russell / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Incense_smoke_against_a_black_sky_-_Flickr_-_Vanessa_Pike-Russell.jpg" } },
+            { "kind": "promo", "kicker": "Live all night", "title": "DIGITAL TONIGHT", "headline": "Catch up on what we know, hour by hour", "media": { "id": "hero-right-promo", "src": "media/hero-right-promo.jpg", "alt": "Anchor desk lit red", "credit": "Vanessa Pike-Russell / Commons / CC BY 2.0", "source": "https://commons.wikimedia.org/wiki/File:Incense_smoke_against_a_black_sky_-_Flickr_-_Vanessa_Pike-Russell.jpg" } },
             { "kind": "card", "size": "md", "headline": "Residents in 30 countries report a low howling sound audible indoors", "duration": "0:47", "media": { "id": "hero-right-feature", "src": "media/hero-right-feature.jpg", "alt": "Closed apartment window at night, curtains drawn", "credit": "Matthew Henry / Commons / CC0", "source": "https://commons.wikimedia.org/wiki/File:Window_Front_at_Night_374889.jpg" } },
             { "kind": "thumb", "headline": "Children in multiple countries drawing the same figure, teachers say", "media": { "id": "hero-right-thumb-1", "src": "media/hero-right-thumb-1.jpg", "alt": "Crayon drawing of a tall pointed figure", "credit": "My daughter Teresa / Commons / CC BY-SA 3.0", "source": "https://commons.wikimedia.org/wiki/File:Child_drawing_age_3_crayon_on_paper.jpg" } },
             { "kind": "thumb", "headline": "Churches, mosques and synagogues report record overnight attendance", "media": { "id": "hero-right-thumb-2", "src": "media/hero-right-thumb-2.jpg", "alt": "Candles lit in a crowded sanctuary", "credit": "Vince Reinhart / Commons / CC BY-SA 2.0", "source": "https://commons.wikimedia.org/wiki/File:Washington_National_Cathedral_(photo_2).jpg" } },
@@ -146,7 +146,7 @@
         {
           "label": "More Top Stories",
           "items": [
-            { "kind": "card", "tag": "Meridian Exclusive", "tagStyle": "exclusive", "headline": "Hospitals report surge of patients describing the same dream", "media": { "id": "band-top-lead", "src": "media/band-top-lead.jpg", "alt": "Hospital corridor under emergency lighting", "credit": "antefixus21 / Commons / CC0", "source": "https://commons.wikimedia.org/wiki/File:Royal_Victoria_Hospital,_Barrie,_Ontario,_Canada_(55046296281).jpg" } },
+            { "kind": "card", "tag": "Digital Exclusive", "tagStyle": "exclusive", "headline": "Hospitals report surge of patients describing the same dream", "media": { "id": "band-top-lead", "src": "media/band-top-lead.jpg", "alt": "Hospital corridor under emergency lighting", "credit": "antefixus21 / Commons / CC0", "source": "https://commons.wikimedia.org/wiki/File:Royal_Victoria_Hospital,_Barrie,_Ontario,_Canada_(55046296281).jpg" } },
             { "kind": "text", "headline": "Governments urge citizens to stay indoors and keep windows closed" },
             { "kind": "text", "headline": "Archaeologists called to emergency government meeting" },
             { "kind": "text", "headline": "Linguists asked to analyze audio. Results classified", "duration": "1:12" },
@@ -199,7 +199,7 @@
 
     {
       "type": "footer",
-      "searchPlaceholder": "Search Meridian...",
+      "searchPlaceholder": "Search Digital...",
       "directory": [
         [
           { "heading": "World", "links": ["Africa", "Americas", "Asia", "Australia", "Europe", "Middle East", "Antarctica"] },
@@ -221,18 +221,18 @@
         ],
         [
           { "heading": "Features", "links": ["Long Reads", "In Pictures", "The Night", "Explainers", "Timeline"] },
-          { "heading": "Watch", "links": ["Live TV", "Schedule", "Meridian Tonight", "Replays", "Clips"] },
+          { "heading": "Watch", "links": ["Live TV", "Schedule", "Digital Tonight", "Replays", "Clips"] },
           { "heading": "Live", "links": ["Live Updates", "Ticker", "What We Know", "Maps", "Alerts"] },
           { "heading": "Games", "links": ["Daily Crossword", "Word Ladder", "Sudoku", "Quiz", "Puzzles"] },
           { "heading": "Stay Safe", "links": ["Stay Indoors", "Keep Windows Closed", "Report a Sighting", "Emergency Numbers", "Shelter Finder"] },
-          { "heading": "About Meridian", "links": ["Profiles", "Leadership", "Newsletters", "Careers", "Contact"] }
+          { "heading": "About Digital", "links": ["Profiles", "Leadership", "Newsletters", "Careers", "Contact"] }
         ]
       ],
       "bottomLinks": ["Watch", "Listen", "Live TV", "Sign in"],
-      "followLabel": "Follow Meridian",
+      "followLabel": "Follow Digital",
       "socialCount": 5,
       "legal": ["Terms of Use", "Privacy Policy", "Cookie Settings", "Ad Choices", "Accessibility", "About Us", "Newsletters", "Transcripts"],
-      "copyright": "© 2026 Meridian News Network. A work of fiction."
+      "copyright": "© 2026 Digital News Network. A work of fiction."
     }
   ]
 }

@@ -1,4 +1,4 @@
-/* Meridian News Network: renders the whole page from content.json.
+/* Digital News Network: renders the whole page from content.json.
    Sections render in the order of content.json "sections"; each one is
    dispatched by its "type" to a renderer below. */
 (() => {
@@ -97,7 +97,7 @@
     const nav = (C.sections || []).find((x) => x.type === 'nav') || {};
     return nav.logoImage
       ? `<a class="logo logo-img" href="#"><img src="${esc(nav.logoImage)}" alt="${esc(nav.logo)}"></a>`
-      : `<a class="logo" href="#"><span class="logo-dot"></span>${esc(nav.logo || 'MERIDIAN')}</a>`;
+      : `<a class="logo" href="#"><span class="logo-dot"></span>${esc(nav.logo || 'DIGITAL')}</a>`;
   }
 
   // Related link under the hero: icon disc, headline, meta (duration or "Gallery") on the right.
@@ -292,7 +292,7 @@
       body.innerHTML =
         `<span class="story-kicker">Developing story</span>
          <h1 id="story-title">${esc(text(c.headline))}</h1>
-         <p class="story-meta">Meridian News Network</p>
+         <p class="story-meta">Digital News Network</p>
          ${c.media ? media(c.media) + caption(c.media) : ''}
          <p>${esc(C.meta?.storyFallback)}</p>`;
     }

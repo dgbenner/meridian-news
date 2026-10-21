@@ -1,4 +1,4 @@
-# Meridian News Network
+# Digital News Network
 
 A static, fictional news-portal page for a Halloween art project. No build step.
 
