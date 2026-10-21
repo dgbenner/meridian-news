@@ -501,8 +501,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 /* Image logo (nav.logoImage in content.json) */
-.logo-img img { height: 32px; width: auto; }
-.f-bottom .logo-img img { height: 26px; }
+.logo-img img { height: 22px; width: auto; }
+.f-bottom .logo-img img { height: 18px; }
 
 /* Keep the promo title legible over a photo */
 .promo .media::after {
