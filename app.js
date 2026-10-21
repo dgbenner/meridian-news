@@ -108,6 +108,12 @@
       `<span class="rel-hl">${esc(text(r.headline))}</span>${meta ? `<span class="rel-meta">${esc(meta)}</span>` : ''}</a></li>`;
   }
 
+  // Editor's correction note; a leading "Correction:" is set in bold.
+  function correction(t) {
+    const m = String(t).match(/^(Correction:)\s*(.*)$/i);
+    return `<p class="correction">${m ? `<strong>${esc(m[1])}</strong> ${esc(m[2])}` : esc(t)}</p>`;
+  }
+
   const label = (t) => (t ? `<h2 class="label">${esc(t)}</h2>` : '');
 
   /* ---------- column items ---------- */
@@ -132,7 +138,8 @@
     lead: (c) =>
       `<article class="lead">${headline(c, 'xxl', 'h1')}${mediaLink(c, { aspect: c.aspect })}${caption(c.media)}` +
       `${c.deck ? `<p class="deck"><a ${linkAttrs(c)}>${esc(c.deck)}</a></p>` : ''}` +
-      `${(c.related || []).length ? `<ul class="related">${c.related.map(relatedRow).join('')}</ul>` : ''}</article>`,
+      `${(c.related || []).length ? `<ul class="related">${c.related.map(relatedRow).join('')}</ul>` : ''}` +
+      `${c.correction ? correction(c.correction) : ''}</article>`,
 
     // If any card in the row has a tag, the others get a blank one so headlines line up.
     row: (c) => {

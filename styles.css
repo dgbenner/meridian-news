@@ -534,3 +534,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--text-3);
 }
+
+/* Editor's correction under the lead story */
+.correction {
+  margin: 16px 0 0;
+  padding: 10px 14px;
+  border-left: 3px solid var(--text-3);
+  background: #f6f6f6;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+.correction strong { font-style: normal; font-weight: 800; color: var(--text); }

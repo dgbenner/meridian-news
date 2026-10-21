@@ -112,6 +112,7 @@
               "href": "#story/lead",
               "media": { "id": "hero-main", "src": "media/hero-main.jpg", "alt": "Hundreds of dark figures crossing a red-orange sky above a city", "credit": "Based on Christopher Michel / Commons / CC BY 2.0" },
               "deck": "Dozens, then hundreds, of dark figures cross skies worldwide as the horizon turns red and officials urge residents to stay indoors",
+              "correction": "Correction: An earlier version of this story said the figures were leaving.",
               "related": [
                 { "headline": "Pilots who saw them up close have stopped talking", "duration": "1:54" },
                 { "headline": "In pictures: the first night", "gallery": true }
