@@ -33,7 +33,7 @@
     {
       "type": "nav",
       "logo": "DIGITAL",
-      "logoImage": "media/logo.png",
+      "logoImage": "media/dnn-logo.svg",
       "links": [
         { "text": "World", "href": "#" },
         { "text": "Americas", "href": "#" },
