@@ -3,7 +3,7 @@
 
    Timeline, randomized per page load, runs once and never again:
    1. Burst: somewhere in the first ~7.5s, a short stutter of wave/RGB flickers.
-   2. Event: 10-15s after the burst, the wave climbs, the page tears apart and
+   2. Event: 9-12s after the burst, the wave climbs, the page tears apart and
       decomposes, the image behind it flickers through and holds ~3s, then it all
       reverses and re-locks with Transmission's overshoot ring.
 
@@ -56,7 +56,7 @@
   let sliceSeed = Math.random() * 1000;
 
   // Push one frame of parameters into the filter.
-  function apply(cfg, { intensity = 0, sliceAmt = 0, dissolve = 0, revealOpacity = 0, ref = 1 }) {
+  function apply(cfg, { intensity = 0, sliceAmt = 0, dissolve = 0, revealOpacity = 0, ref = 1, chromaBoost = null }) {
     seed += cfg.speed;
     sliceSeed += cfg.speed * 0.6;
     waveNoise.setAttribute('numOctaves', cfg.octaves);
@@ -64,7 +64,10 @@
     if (intensity !== 0) waveNoise.setAttribute('seed', Math.floor(seed));
     wave.setAttribute('scale', intensity.toFixed(1));
 
-    const c = cfg.chroma * (intensity / ref);
+    // RGB split follows the wave by default; the event drives it directly
+    // (chromaBoost) so the colour separation is loud from the first moment.
+    if (cfg.spin) cfg.angle += cfg.spin;
+    const c = cfg.chroma * (chromaBoost === null ? intensity / ref : chromaBoost);
     const rx = Math.cos(cfg.angle) * c;
     const ry = Math.sin(cfg.angle) * c;
     redOff.setAttribute('dx', rx.toFixed(1));
@@ -164,6 +167,8 @@
 
   function event() {
     const cfg = waveConfig(['large', 'massive', 'medium']);
+    cfg.chroma = R(80, 140);                     // far wider RGB split than the burst
+    cfg.spin = R(0.012, 0.03) * (Math.random() < 0.5 ? -1 : 1);
     const d = {
       ramp: R(1400, 2200),
       deep: R(900, 1400),
@@ -189,14 +194,16 @@
         const p = ms / t1;
         const intensity = (30 + (deepScale * 0.55 - 30) * ease(p)) * stutter;
         const show = Math.random() < 0.08 + p * 0.25;
-        return { cfg, ref, intensity, sliceAmt: 40 * p, revealOpacity: show ? R(0.12, 0.5) * p : 0 };
+        const spike = Math.random() < 0.12 ? R(1.3, 1.8) : 1;
+        return { cfg, ref, intensity, sliceAmt: 40 * p, revealOpacity: show ? R(0.12, 0.5) * p : 0, chromaBoost: (0.75 + 0.45 * p) * spike };
       }
       if (ms < t2) {
         // Deep distortion; the page starts to decompose, the image surges.
         const p = (ms - t1) / d.deep;
         const intensity = (deepScale * (0.55 + 0.45 * ease(p))) * stutter;
         const flick = Math.random() < 0.18 ? R(0.3, 0.7) : 1;
-        return { cfg, ref, intensity, sliceAmt: 40 + 140 * p, dissolve: ease(p), revealOpacity: clamp01((0.45 + 0.55 * p) * flick) };
+        const spike = Math.random() < 0.12 ? R(0.6, 1.5) : 1;
+        return { cfg, ref, intensity, sliceAmt: 40 + 140 * p, dissolve: ease(p), revealOpacity: clamp01((0.45 + 0.55 * p) * flick), chromaBoost: 1.2 * spike };
       }
       if (ms < t3) {
         // The page is gone; the image holds, still flickering, with stray fragments of the page.
@@ -212,6 +219,7 @@
           cfg, ref,
           intensity: (deepScale - (deepScale - 120) * ease(p)) * stutter,
           sliceAmt: 180 * (1 - p),
+          chromaBoost: 0.3 + 0.7 * (1 - ease(p)),
           dissolve: 1 - ease(p),
           revealOpacity: clamp01((1 - ease(p)) * flick)
         };
@@ -230,7 +238,7 @@
     setTimeout(event, 1500);
   } else {
     const burstAt = mode === 'now' ? 500 : R(1500, 7500);
-    const gap = mode === 'now' ? 3000 : R(10000, 15000);
+    const gap = mode === 'now' ? 3000 : R(9000, 12000);
     setTimeout(() => burst(() => setTimeout(event, gap)), burstAt);
   }
 })();

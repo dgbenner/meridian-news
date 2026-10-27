@@ -464,7 +464,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
     background: var(--bg);
     border-bottom: 1px solid var(--rule);
   }
-  .trending ul { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+  .trending ul { justify-content: safe center; overflow-x: auto; scrollbar-width: none; }
 }
 
 @media (max-width: 1000px) {
