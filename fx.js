@@ -3,7 +3,7 @@
 
    Timeline, randomized per page load, runs once and never again:
    1. Burst: somewhere in the first ~7.5s, a short stutter of wave/RGB flickers.
-   2. Event: 15-20s after the burst, the wave climbs, the page tears apart and
+   2. Event: 10-15s after the burst, the wave climbs, the page tears apart and
       decomposes, the image behind it flickers through and holds ~3s, then it all
       reverses and re-locks with Transmission's overshoot ring.
 
@@ -90,18 +90,29 @@
   // While the effect runs, the page is pinned to the viewport (scrolled to where
   // the reader was), so the filter only processes what's on screen, not the
   // whole page.
-  let savedY = 0;
+  const root = document.documentElement;
+  const syncScroll = () => { app.scrollTop = window.scrollY; };
 
   function start() {
     rotMask.setAttribute('values', MASK_REST);
-    savedY = window.scrollY;
+    const y = window.scrollY;
+    root.classList.add('fx-running');   // reveal joins the page first, so the scroll isn't clamped
+    // Line the image up with the reader: the body of the spire (about 45% down
+    // the image) lands mid-screen. They can scroll up or down for the rest.
+    const imgH = reveal.offsetHeight;
+    reveal.style.top = `${Math.max(0, y + window.innerHeight / 2 - imgH * 0.45)}px`;
     app.classList.add('fx-on');
-    app.scrollTop = savedY;
+    window.scrollTo(0, y);
+    app.scrollTop = y;
+    window.addEventListener('scroll', syncScroll, { passive: true });
   }
 
   function stop() {
+    window.removeEventListener('scroll', syncScroll);
+    const y = app.scrollTop;
     app.classList.remove('fx-on');
-    window.scrollTo(0, savedY);
+    root.classList.remove('fx-running');
+    window.scrollTo(0, y);
     wave.setAttribute('scale', '0');
     slice.setAttribute('scale', '0');
     for (const el of [redOff, blueOff]) { el.setAttribute('dx', '0'); el.setAttribute('dy', '0'); }
@@ -219,7 +230,7 @@
     setTimeout(event, 1500);
   } else {
     const burstAt = mode === 'now' ? 500 : R(1500, 7500);
-    const gap = mode === 'now' ? 3000 : R(15000, 20000);
+    const gap = mode === 'now' ? 3000 : R(10000, 15000);
     setTimeout(() => burst(() => setTimeout(event, gap)), burstAt);
   }
 })();

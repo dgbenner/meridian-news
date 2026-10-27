@@ -555,6 +555,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* ---------- one-time signal event (fx.js) ---------- */
 #app { position: relative; z-index: 1; }
+
+/* While the effect runs: black under everything, the page carries its own
+   white, so distortion opens onto black before the image comes through. */
+html.fx-running,
+html.fx-running body { background: #000; }
+html.fx-running #app { background: var(--bg); }
+
+/* Page pinned to the viewport during the effect, so the filter only
+   processes what's on screen. fx.js keeps it in step with the scroll. */
 #app.fx-on {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -562,37 +571,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
   overflow: hidden;
   filter: url(#dnnFx);
 }
+
+/* The image: full browser width, natural height, from the top of the page,
+   so it scrolls like a page of its own while it's showing. */
 #reveal {
-  position: fixed;
-  inset: 0;
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
   z-index: 0;
   opacity: 0;
-  overflow: hidden;
   pointer-events: none;
-  background: #000;
 }
-/* The image is tall and narrow: a blurred, enlarged copy fills the screen,
-   the sharp one sits centred over it. */
-.reveal-fill {
-  position: absolute;
-  inset: -80px;
-  background: url(media/reveal-spire.jpg) center / 100% 100% no-repeat;
-  filter: blur(40px) brightness(0.8);
-}
-.reveal-img {
-  position: absolute;
-  inset: 0;
-  background: url(media/reveal-spire.jpg) center / contain no-repeat;
-  /* Fade the narrow image's side edges into the fill. Width of the image at
-     full height is 640/1904 of the viewport height, about 33.6vh. */
-  -webkit-mask-image: linear-gradient(to right, transparent calc(50% - 16.8vh), #000 calc(50% - 9vh), #000 calc(50% + 9vh), transparent calc(50% + 16.8vh));
-          mask-image: linear-gradient(to right, transparent calc(50% - 16.8vh), #000 calc(50% - 9vh), #000 calc(50% + 9vh), transparent calc(50% + 16.8vh));
-}
-/* Carry the image's black ground line across the full width */
-#reveal::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 13vh;
-  background: linear-gradient(to top, #000 0, #000 5.5vh, rgba(0, 0, 0, 0) 13vh);
-}
+html.fx-running #reveal { display: block; }
+#reveal img { display: block; width: 100%; height: auto; }
