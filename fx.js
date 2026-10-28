@@ -2,8 +2,8 @@
    signal" effect (SVG turbulence displacement + RGB channel split).
 
    Timeline, randomized per page load, runs once and never again:
-   1. Burst: somewhere in the first ~7.5s, a short stutter of wave/RGB flickers.
-   2. Event: 9-12s after the burst, the wave climbs, the page tears apart and
+   1. Burst: somewhere in the first 1.5-5s, a short stutter of wave/RGB flickers.
+   2. Event: 7-10s after the burst, the wave climbs, the page tears apart and
       decomposes, the image behind it flickers through and holds ~3s, then it all
       reverses and re-locks with Transmission's overshoot ring.
 
@@ -237,8 +237,8 @@
   if (mode === 'big') {
     setTimeout(event, 1500);
   } else {
-    const burstAt = mode === 'now' ? 500 : R(1500, 7500);
-    const gap = mode === 'now' ? 3000 : R(9000, 12000);
+    const burstAt = mode === 'now' ? 500 : R(1500, 5000);
+    const gap = mode === 'now' ? 3000 : R(7000, 10000);
     setTimeout(() => burst(() => setTimeout(event, gap)), burstAt);
   }
 })();
